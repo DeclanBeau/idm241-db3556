@@ -136,7 +136,8 @@ padding: 0 .5rem 0 0;
   font-size: 5rem;
   display: flex;
   justify-content: center;
-  width: 500px;
+  margin-left: 250px;
+  margin-right: 250px
 }
 
 #shuffle:hover{
@@ -145,7 +146,8 @@ padding: 0 .5rem 0 0;
   font-size: 5.1rem;
   display: flex;
   justify-content: center;
-  width: 500px;
+  margin-left: 250px;
+  margin-right: 250px;
 }
 
 #shuffle.active{
