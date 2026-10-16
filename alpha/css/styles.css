@@ -136,18 +136,15 @@ padding: 0 .5rem 0 0;
   font-size: 5rem;
   display: flex;
   justify-content: center;
-  margin-left: 250px;
-  margin-right: 250px
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #shuffle:hover{
   color:#ffffff;
   opacity: 100%;
   font-size: 5.1rem;
-  display: flex;
-  justify-content: center;
-  margin-left: 250px;
-  margin-right: 250px;
 }
 
 #shuffle.active{
@@ -161,10 +158,6 @@ padding: 0 .5rem 0 0;
   max-width: 400px;
   margin: var(--rhythm);
   object-fit: fill;
-}
-#shuffle{ 
-  margin-left: 200px;
-  margin-right: 200px;
 }
 }
 
@@ -214,17 +207,4 @@ a{
   margin: var(--rhythm);
   object-fit: fill;
 }
-
-#shuffle{
-  width: 100px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#shuffle.active{
-  width: 100px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 }
