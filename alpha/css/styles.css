@@ -120,11 +120,12 @@ padding: 0 .5rem 0 0;
   display: grid;
   grid-column: auto;
   grid-row: auto;
-  margin: var(--rhythm);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .images p{
-  margin-left: var(--rhythm);
+  margin: .1rem auto var(--rhythm) auto;
 }
 
 #shuffle{
@@ -156,17 +157,28 @@ padding: 0 .5rem 0 0;
 @media (max-width: 600px){
 .images img{
   max-width: 400px;
-  margin: var(--rhythm);
+  margin-left: auto;
+  margin-right: auto;
   object-fit: fill;
 }
+
+.images p{
+  margin: .1rem 3rem var(--rhythm);
+}
+
 }
 
 @media (max-width:450px) {
 
 .images img{
   max-width: 300px;
-  margin: var(--rhythm);
+  margin-left: auto;
+  margin-right: auto;
   object-fit: fill;
+}
+
+.images p{
+  margin: .1rem 4.7rem var(--rhythm);
 }
 
 p{
@@ -204,7 +216,13 @@ a{
 @media (max-width: 393px) {
 .images img{
   max-width: 200px;
-  margin: var(--rhythm);
+  margin-left:auto;
+  margin-right:auto;
   object-fit: fill;
 }
+
+.images p{
+  margin: .1rem 4.1rem var(--rhythm);
+}
+
 }
