@@ -127,6 +127,33 @@ padding: 0 .5rem 0 0;
   margin-left: var(--rhythm);
 }
 
+#shuffle{
+  background: none;
+  border: none;
+  cursor: pointer;
+  color:#ffffff;
+  opacity: 75%;
+  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+  width: 500px;
+}
+
+#shuffle:hover{
+  color:#ffffff;
+  opacity: 100%;
+  font-size: 5.1rem;
+  display: flex;
+  justify-content: center;
+  width: 500px;
+}
+
+#shuffle.active{
+  color: #1ed670;
+  opacity: 100%;
+}
+
+
 @media (max-width: 600px){
 .images img{
   max-width: 400px;
