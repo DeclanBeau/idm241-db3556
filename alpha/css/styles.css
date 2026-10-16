@@ -162,7 +162,10 @@ padding: 0 .5rem 0 0;
   margin: var(--rhythm);
   object-fit: fill;
 }
-
+#shuffle{ 
+  margin-left: 200px;
+  margin-right: 200px;
+}
 }
 
 @media (max-width:450px) {
@@ -211,4 +214,17 @@ a{
   margin: var(--rhythm);
   object-fit: fill;
 }
+
+#shuffle{
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#shuffle.active{
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 }
