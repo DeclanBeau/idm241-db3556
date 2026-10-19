@@ -128,6 +128,15 @@ padding: 0 .5rem 0 0;
   margin: .1rem auto var(--rhythm) auto;
 }
 
+.shuffle-container{
+  display: flex;
+  flex-direction: column;
+  margin: 2.2rem auto;
+  align-items: center;
+  width: 100px;
+}
+
+
 #shuffle{
   background: none;
   border: none;
@@ -136,10 +145,7 @@ padding: 0 .5rem 0 0;
   opacity: 75%;
   font-size: 5rem;
   display: flex;
-  justify-content: center;
   width: 100px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 #shuffle:hover{
@@ -151,6 +157,40 @@ padding: 0 .5rem 0 0;
 #shuffle.active{
   color: #1ed670;
   opacity: 100%;
+}
+
+#dot{
+  height: 20px;
+  width: 20px;
+  background-color: var(--color-text-accent);
+  border-radius: 50%;
+  display:none;
+  justify-content: center;
+  margin-top: var(--rhythm);
+
+
+}
+
+#dot.active{
+  opacity: 100;
+  display: flex;
+
+}
+
+#label{
+  font-family: var(--font-main);
+  background-color: #272727;
+  color: var(--color-text);
+  padding: 5px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  display: none;
+  position: absolute;
+  transform: translateY(-32px);
+}
+
+.shuffle-container:hover  #label{
+  display:flex;
 }
 
 
