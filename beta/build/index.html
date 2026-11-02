@@ -7,19 +7,30 @@
     <link rel="normalize" href="../css/normalize.css" media="screen" />
     <link rel="stylesheet" href="../css/styles.css" media="screen" />
     <title> IDM241 Beta Description </title>
+    <script src="https://kit.fontawesome.com/d33fac75fa.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <main>
         <div id="header">
             <h1> Spotify </h1>
-            <a target="_blank" href="https://open.spotify.com/"> Spotify Web Player </a>
         </div>
+
         <div id="parent">
             <article>
+
                 <h2> Shuffle Button </h2>
                 <p> Located on the left side of the playback bar at the bottom of the screen while a song is playing.
                 </p>
+
+                <div class="shuffle-container">
+                    <span id="label"> Enable Shuffle</span>
+                    <button id="shuffle">
+                        <i class="fa-solid fa-shuffle"></i>
+                    </button>
+                    <span id="dot"> </span>
+                </div>
+
                 <section>
                     <h3> TRIGGERS: </h3>
                     <ul>
