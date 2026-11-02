@@ -153,6 +153,16 @@ article{
 
 }
 
+article{
+  max-width: 750px;
+  margin: var(--rhythm) 2rem;
+  background-color: var(--color-card);
+  padding: 1rem;
+  border: hidden;
+  border-radius: 12px;
+ 
+}
+
 @media (max-width:450px) {
 
 .images video{

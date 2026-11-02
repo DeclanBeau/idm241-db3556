@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="normalize" href="../css/normalize.css" media="screen" />
+    <link rel="stylesheet" href="../css/styles.css" media="screen" />
+    <title> IDM241 Beta Description </title>
+</head>
+
+<body>
+    <main>
+        <div id="header">
+            <h1> Spotify </h1>
+            <a target="_blank" href="https://open.spotify.com/"> Spotify Web Player </a>
+        </div>
+        <div id="parent">
+            <article>
+                <h2> Shuffle Button </h2>
+                <p> Located on the left side of the playback bar at the bottom of the screen while a song is playing.
+                </p>
+                <section>
+                    <h3> TRIGGERS: </h3>
+                    <ul>
+                        <li> Hover On </li>
+                        <li> Hover Off </li>
+                        <li> Click On </li>
+                        <li> Click Off </li>
+                    </ul>
+                </section>
+                <section>
+                    <h3> RULES </h3>
+                    <h4> Hover On </h4>
+                    <ul>
+                        <li> Cursor changes to finger </li>
+                        <li> Label saying "Enable Shuffle" fades in above button </li>
+                        <li> Button fades from white to green </li>
+                        <li> Button grows by .1 rem </li>
+                    </ul>
+                    <h4> Hover Off </h4>
+                    <ul>
+                        <li> Cursor changes to pointer </li>
+                        <li> Label fades out </li>
+                        <li> Button fades back to white </li>
+                        <li> Button shrinks back to default </li>
+                    </ul>
+                    <h4> Click On </h4>
+                    <ul>
+                        <li> Label changes from "Enable Shuffle" to "Disable Shuffle" </li>
+                        <li> Dot fades in the top right shuffle button </li>
+                        <li> Database is updated to shuffle user's queue </li>
+                    </ul>
+                    <h4> Click Off </h4>
+                    <ul>
+                        <li> Label fades out </li>
+                        <li> Dot fades out </li>
+                        <li> Database is updated to unshuffle user's queue </li>
+                    </ul>
+                </section>
+                <section>
+                    <h3> FEEDBACK </h3>
+                    <h4> Hover On </h4>
+                    <ul>
+                        <li> Cursor changes to finger </li>
+                        <li> Label saying "Enable Shuffle" fades in above button </li>
+                        <li> Button fades from white to green </li>
+                        <li> Button grows by .1 rem </li>
+                    </ul>
+                    <h4> Hover Off </h4>
+                    <ul>
+                        <li> Cursor changes to pointer </li>
+                        <li> Label fades out </li>
+                        <li> Button fades back to white </li>
+                        <li> Button shrinks back to default </li>
+                    </ul>
+                    <h4> Click On </h4>
+                    <ul>
+                        <li> Label changes from "Enable Shuffle" to "Disable Shuffle" </li>
+                        <li> Dot fades in at the top right shuffle button </li>
+                    </ul>
+                    <h4> Click off </h4>
+                    <ul>
+                        <li> Label fades out </li>
+                        <li> Dot fades out </li>
+                    </ul>
+                    <h3>LOOPS/MODES</h3>
+                    <ul>
+                        <li> None </li>
+                    </ul>
+                </section>
+            </article>
+
+
+            <article>
+                <h2> Repeat Button </h2>
+                <p> Located on the right side of the playback bar at the bottom of the screen while a song is playing.
+                </p>
+                <section>
+                    <h3> TRIGGERS: </h3>
+                    <ul>
+                        <li> Hover On </li>
+                        <li> Hover Off </li>
+                        <li> Click On </li>
+                        <li> Second Click On</li>
+                        <li> Click Off </li>
+                    </ul>
+                </section>
+                <section>
+                    <h3> RULES </h3>
+                    <h4> Hover On </h4>
+                    <ul>
+                        <li> Cursor changes to finger </li>
+                        <li> Button Spins 360 degrees</li>
+                        <li> Button fades from white to green </li>
+                        <li> Label saying "Enable Repeat" fades in above button</li>
+                    </ul>
+                    <h4> Hover Off </h4>
+                    <ul>
+                        <li> Cursor changes to pointer </li>
+                        <li> Button fades back to white </li>
+                        <li> Label fades out </li>
+                    </ul>
+                    <h4> Click On </h4>
+                    <ul>
+                        <li> Label changes from "Enable Repeat" to "Enable Repeat One" </li>
+                        <li> Dot fades in on top right of reapeat button </li>
+                        <li> Database is updated to reapeat user's queue </li>
+                    </ul>
+                    <h4> Second Click On</h4>
+                    <ul>
+                        <li>Label changes from "Enable Repeat One" to "Disable Repeat"</li>
+                        <li>Number 1 fades in on top right of repeat button</li>
+                        <li>Database is updated to reapeat user's current song</li>
+                    </ul>
+                    <h4> Click off </h4>
+                    <ul>
+                        <li> Button fades from geen to white </li>
+                        <li> Label fades out </li>
+                        <li> Dot fades out </li>
+                        <li> Database is updated to not repeat user's song </li>
+                    </ul>
+                </section>
+                <section>
+                    <h3> FEEDBACK </h3>
+                    <h4> Hover On </h4>
+                    <ul>
+                        <li> Cursor changes to finger </li>
+                        <li> Button Spins 360 degrees</li>
+                        <li> Button fades from white to green </li>
+                        <li> Label saying "Enable Repeat" fades in above button</li>
+                    </ul>
+                    <h4> Hover Off </h4>
+                    <ul>
+                        <li> Cursor changes to pointer </li>
+                        <li> Button fades back to white </li>
+                        <li> Label fades out </li>
+                    </ul>
+                    <h4> Click On </h4>
+                    <ul>
+                        <li> Label changes from "Enable Repeat" to "Enable Repeat One" </li>
+                        <li> Dot fades in on top right of reapeat button </li>
+                    </ul>
+                    <h4> Second Click On</h4>
+                    <ul>
+                        <li>Label changes from "Enable Repeat One" to "Disable Repeat"</li>
+                        <li>Number 1 fades in on top right of repeat button</li>
+                    </ul>
+                    <h4> Click off </h4>
+                    <ul>
+                        <li> Button fades from geen to white </li>
+                        <li> Label fades out </li>
+                        <li> Dot fades out </li>
+                    </ul>
+                    <h3>LOOPS/MODES</h3>
+                    <ul>
+                        <li> None </li>
+                    </ul>
+                </section>
+            </article>
+        </div>
+    </main>
+    <script src="main.js"> </script>
+</body>
+
+</html>
