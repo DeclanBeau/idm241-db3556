@@ -125,7 +125,8 @@ ul li:before {
 }
 
 article {
-  max-width: 750px;
+  flex: 1;
+  min-width: 0px;
   margin: var(--rhythm) 2rem;
   background-color: var(--accent-color);
   padding: 1rem;
@@ -135,12 +136,11 @@ article {
 }
 
 #header {
-  width: 1500px;
+  width: 100%;
   margin-left: 2rem;
 }
 
-@media (max-width: 650px) {
-
+@media (max-width: 900px) {
 
   #parent {
     flex-direction: column;
@@ -167,6 +167,13 @@ article {
   width: 100px;
 }
 
+.repeat-container {
+  display: flex;
+  flex-direction: column;
+  margin: 2.3rem auto;
+  align-items: center;
+  width: 100px;
+}
 
 #shuffle {
   background: none;
@@ -177,39 +184,41 @@ article {
   font-size: 5rem;
   display: flex;
   width: 100px;
+
+  transform: scale(1);
   transition: var(--transition);
 }
 
 #shuffle:hover {
   color: #1ed670;
   opacity: 100%;
-  font-size: 5.1rem;
+  transform: scale(1.02);
 }
 
-#shuffle.active{
+#shuffle.active {
   color: #1ed670;
-  font-size: 5.1rem 
+  transform: scale(1.02);
 }
 
 #dot {
-  height: 1px;
-  width: 1px;
+  height: 25px;
+  width: 25px;
   background-color: var(--color-text-accent);
   border: 2px solid var(--accent-color);
   border-radius: 50%;
   opacity: 0;
   justify-content: center;
   margin-top: 12px;
-  transform: translateX(25px) translateY(-73px); 
+  transform: translateX(20px) translateY(-85px) scale(0);
   transition: var(--transition);
 
 }
 
 #dot.active {
-  height:25px;
+  height: 25px;
   width: 25px;
   opacity: 100;
-  transform: translateX(31px) translateY(-93px); 
+  transform: translateX(31px) translateY(-93px) scale(1);
   display: flex;
 
 }
@@ -224,13 +233,113 @@ article {
   position: absolute;
   transform: translateY(-32px);
   opacity: 0;
+  transition: var(--transition);
+}
+
+#repeat-label {
+  font-family: var(--font-main);
+  background-color: #272727;
+  color: var(--color-text);
+  padding: 5px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  position: absolute;
+  transform: translateY(-45px);
+  opacity: 0;
+  transition: var(--transition);
 }
 
 .shuffle-container:hover #label {
   opacity: 100;
-  transition: opacity var(--transition);
 }
 
+.repeat-container:hover #repeat-label{
+  opacity: 100;
+}
+
+#repeat {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+#repeat svg {
+  width: 80px;
+  height: 80px;
+  fill: currentColor;
+  transform: rotate(0deg);
+  transition: var(--transition);
+}
+
+@keyframes repeat-spin{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+#repeat svg.spin{
+  animation: repeat-spin 400ms ease;
+}
+
+#repeat.active svg{
+  animation: none;
+  transform: rotate(0deg)
+}
+#repeat:hover{
+  color: var(--color-text-accent);
+}
+
+#repeat.active{
+  color: var(--color-text-accent);
+}
+
+#repeat-dot {
+  height: 25px;
+  width: 25px;
+  background-color: var(--color-text-accent);
+  border: 2px solid var(--accent-color);
+  border-radius: 50%;
+  opacity: 0;
+  justify-content: center;
+  margin-top: 12px;
+  position: absolute;
+  transform: translateX(-10px) translateY(-10px) scale(0);
+  transition: var(--transition);
+
+}
+
+#repeat-dot.active {
+  height: 25px;
+  width: 25px;
+  opacity: 100;
+  transform: translateX(-15px) translateY(-15px) scale(1);
+  position: absolute ;
+
+}
+
+#repeat-one{
+  opacity:0;  
+  position: absolute;
+  transform: translateX(-15px) translateY(-25px) scale(0);
+  transition: var(--transition);
+}
+
+#repeat-one p{
+  position:absolute;
+  color:#1ed670;
+  font-size: 25px;
+  font-weight: 700;
+
+  -webkit-text-stroke: 1px var(--color-card);
+}
+
+#repeat-one.active{
+  opacity:100;
+  transform: translateX(-10px) translateY(-25px) scale(1);
+}
 
 @media (max-width:450px) {
 
