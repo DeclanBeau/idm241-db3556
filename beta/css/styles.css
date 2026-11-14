@@ -81,9 +81,16 @@ h4 {
   font-family: var(--font-bold);
   font-weight: 600;
   margin: .75rem .5rem 0rem;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
+h5 {
+  color: var(--color-text);
+  font-family: var(--font-bold);
+  font-weight: 600;
+  margin: .75rem .5rem 0rem;
+  font-size: 1.1rem;
+}
 ul {
   color: var(--color-text);
   font-family: var(--font-main);
@@ -280,6 +287,7 @@ article {
     transform: rotate(360deg);
   }
 }
+
 #repeat svg.spin{
   animation: repeat-spin 400ms ease;
 }
