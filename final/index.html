@@ -44,7 +44,7 @@
                     <ul>
                         <li> Cursor changes to finger </li>
                         <li> Label saying "Enable Shuffle" fades in above button </li>
-                        <li> Button fades from white to green </li>
+                        <li> Button changes from white to green based on location of user's mouse</li>
                         <li> Button grows by .1 rem </li>
                     </ul>
                     <h5> Active </h5>
@@ -57,7 +57,7 @@
                     <ul>
                         <li> Cursor changes to pointer </li>
                         <li> Label fades out </li>
-                        <li> Button fades back to white </li>
+                        <li> Button changes back to white based on location of user's mouse </li>
                         <li> Button shrinks back to default </li>
                     </ul>
                     <h5> Active </h5>
@@ -85,7 +85,7 @@
                     <ul>
                         <li> Cursor changes to finger </li>
                         <li> Label saying "Enable Shuffle" fades in above button </li>
-                        <li> Button fades from white to green </li>
+                        <li> Button changes from white to green based on location of user's mouse </li>
                         <li> Button grows by .1 rem </li>
                     </ul>
                     <h5> Active </h5>
@@ -98,7 +98,7 @@
                     <ul>
                         <li> Cursor changes to pointer </li>
                         <li> Label fades out </li>
-                        <li> Button fades back to white </li>
+                        <li> Button changes back to white based on location of user's mouse </li>
                         <li> Button shrinks back to default </li>
                     </ul>
                     <h5> Active </h5>
@@ -132,7 +132,8 @@
 
             <article>
                 <h2> Repeat Button </h2>
-                <p> Located on the right side of the playback bar at the bottom of the screen while a song is playing.
+                <p> Second button on the right side of the playback bar at the bottom of the screen while a song is
+                    playing.
                 </p>
                 <section>
                     <h3> TRIGGERS: </h3>
@@ -161,7 +162,7 @@
                     <ul>
                         <li> Cursor changes to finger </li>
                         <li> Button Spins 360 degrees</li>
-                        <li> Button fades from white to green </li>
+                        <li> Button changes from white to green based on location of user's mouse </li>
                         <li> Label saying "Enable Repeat" fades in above button</li>
                     </ul>
                     <h5>Active 1</h5>
@@ -178,7 +179,7 @@
                     <h5>Default</h5>
                     <ul>
                         <li> Cursor changes to pointer </li>
-                        <li> Button fades back to white </li>
+                        <li> Button changes back to white based on location of user's mouse </li>
                         <li> Label fades out </li>
                     </ul>
                     <h5>Active 1</h5>
@@ -218,7 +219,7 @@
                     <ul>
                         <li> Cursor changes to finger </li>
                         <li> Button Spins 360 degrees</li>
-                        <li> Button fades from white to green </li>
+                        <li> Button changes from white to green based on locaiton of user's mouse </li>
                         <li> Label saying "Enable Repeat" fades in above button</li>
                     </ul>
                     <h5>Active 1</h5>
@@ -235,7 +236,7 @@
                     <h5>Default</h5>
                     <ul>
                         <li> Cursor changes to pointer </li>
-                        <li> Button fades back to white </li>
+                        <li> Button changes back to white based on location of user's mouse </li>
                         <li> Label fades out </li>
                     </ul>
                     <h5>Active 1</h5>
@@ -272,7 +273,65 @@
                 <section>
                     <h2> Visualization </h2>
                     <div class="vis">
-                        <video width="250" height="250" src="images/shuffle.mp4" controls></video>
+                        <video width="250" height="250" src="images/repeat.mp4" controls></video>
+                    </div>
+                </section>
+            </article>
+
+            <article>
+                <h2> Skip Button </h2>
+                <p> First button on the right side of the playback bar at the bottom of the screen while a song is
+                    playing.
+                </p>
+                <section>
+                    <h3> TRIGGERS: </h3>
+                    <ul>
+                        <li> Hover On </li>
+                        <li> Hover Off </li>
+                        <li> Click On </li>
+                    </ul>
+                </section>
+                <section>
+                    <h3> RULES </h3>
+                    <h4> Hover On </h4>
+                    <ul>
+                        <li> Cursor changes to finger </li>
+                        <li> Button changes from white to green based on location of user's mouse</li>
+                    </ul>
+                    <h4> Hover Off </h4>
+                    <ul>
+                        <li> Cursor changes to pointer </li>
+                        <li> Button changes back to white based on location of user's mouse </li>
+                    </ul>
+                    <h4> Click On </h4>
+                    <ul>
+                        <li>Button animates moving to the right, off the screen</li>
+                        <li>Button turns back to white, and animates back to original position from the left</li>
+                        <li>Database is updated to change user's song to the next in queue</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3> FEEDBACK </h3>
+                    <h4> Hover On </h4>
+                    <ul>
+                        <li> Cursor changes to finger </li>
+                        <li> Button changes from white to green based on location of user's mouse</li>
+                    </ul>
+                    <h4> Hover Off </h4>
+                    <ul>
+                        <li> Cursor changes to pointer </li>
+                        <li> Button changes back to white based on location of user's mouse </li>
+                    </ul>
+                    <h4> Click On </h4>
+                    <ul>
+                        <li>Button animates moving to the right, off the screen</li>
+                        <li>Button turns back to white, and animates back to original position from the left</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2> Visualization </h2>
+                    <div class="vis">
+                        <video width="250" height="250" src="images/skip.mp4" controls></video>
                     </div>
                 </section>
             </article>
