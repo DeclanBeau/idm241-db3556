@@ -39,8 +39,7 @@
 
 body {
   background-color: var(--background-color);
-  max-width: 1500px;
-  margin: auto;
+  margin: 0;
 }
 
 p {
@@ -129,22 +128,23 @@ ul li:before {
 #parent {
   display: flex;
   flex-direction: row;
+  gap: 1rem;
+  padding: 0 1rem;
 }
 
 article {
   flex: 1;
-  min-width: 0px;
-  margin: var(--rhythm) 2rem;
+  min-width: 0;
+  margin: var(--rhythm) 0;
   background-color: var(--accent-color);
   padding: 1rem;
   border: hidden;
   border-radius: 12px;
-
 }
 
 #header {
   width: 100%;
-  margin-left: 2rem;
+  padding-left: 2rem;
 }
 
 @media (max-width: 900px) {
@@ -153,16 +153,15 @@ article {
     flex-direction: column;
   }
 
-}
-
-article {
-  max-width: 750px;
-  margin: var(--rhythm) 2rem;
-  background-color: var(--accent-color);
-  padding: 1rem;
-  border: hidden;
-  border-radius: 12px;
-
+  article {
+    max-width: 750px;
+    margin: var(--rhythm) 2rem;
+    background-color: var(--accent-color);
+    padding: 1rem;
+    border: hidden;
+    border-radius: 12px;
+    
+    }
 }
 
 
